@@ -1,7 +1,6 @@
-import { CreateUserDto } from "dto/create-user.dto";
-import { UpdateUserDto } from "dto/update-user.dto";
-import { User } from "models/User";
+import { CreateUserDto, UpdateUserDto, createUserSchema, updateUserSchema } from "./dto";
+import { User } from "./models";
 
-export {
-    User, UpdateUserDto, CreateUserDto
-}
+export { User, createUserSchema, updateUserSchema };
+
+export type { CreateUserDto, UpdateUserDto };
